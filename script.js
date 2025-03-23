@@ -17,16 +17,31 @@ function logger() {
 
 //calling / running / invoking function
 
-logger();
+// logger();
 
-function fruitProcessor(apples, oranges) {
-    //console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
-    return juice;
+// function fruitProcessor(apples, oranges) {
+//     //console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+//     return juice;
+// }
+
+// const mixJuice = fruitProcessor(5, 3);
+// console.log(mixJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+
+function calcAge1(birthYear) {
+    const age = 2037 - birthYear;
+    return age;
 }
 
-const mixJuice = fruitProcessor(5, 3);
-console.log(mixJuice);
+const age1 = calcAge1(1991);
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+
+console.log(age1, age2);
