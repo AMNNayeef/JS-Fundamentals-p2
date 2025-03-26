@@ -27,5 +27,5 @@ console.log(friends.includes('23'));
 console.log(friends.includes(23));
 
 if (friends.includes('Ashfi')) {
-    console.log(`You have a friend called Ashfi`);
+    console.log(`You have a friend called ${friends['Talha']}`);
 }
