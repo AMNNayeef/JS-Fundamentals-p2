@@ -268,9 +268,29 @@ const nayeefArray = [
 ];
 
 const nayeef = {
-    firstName= 'Nayeef',
-    lastName= 'Nowfal',
-    age = 2025 - 1998,
-    job = 'Student',
-    friends =['Talha', 'Ashfi', 'Eraz']
+    firstName: 'Nayeef',
+    lastName: 'Nowfal',
+    age: 2025 - 1998,
+    job: 'Student',
+    friends: ['Talha', 'Ashfi', 'Eraz']
 };
+
+console.log(nayeef);
+console.log(nayeef.lastName);
+
+const nameKey = 'Name';
+console.log(nayeef['first' + nameKey]);
+console.log(nayeef['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Nayeef? Choose between firstName, lastName, age, job, and friends');
+if (nayeef[interestedIn]) {
+    console.log(nayeef[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+}
+
+nayeef.location = 'Rampura';
+nayeef['email'] = 'nayeefamn@gmail.com';
+console.log(nayeef);
+
+console.log(`${nayeef.firstName} has ${nayeef.friends.length} friends, and his best friend is called ${nayeef.friends[0]}`)
