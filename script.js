@@ -372,9 +372,57 @@
 //     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
 // }
 
-console.log('Lifting weights repetition :');
+// console.log('Lifting weights repetition :');
 
-//for loop keeps running while condition is True
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repetition ${rep}`);
+// //for loop keeps running while condition is True
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+
+const nayeefArray = [
+    'Nayeef',
+    'Nowfal',
+    2025 - 1998,
+    'Student',
+    ['Talha', 'Ashfi', 'Eraz'],
+    true
+];
+
+const types = []
+
+for (let i = 0; i < nayeefArray.length; i++) {
+    //reading from nayeefArray
+    console.log(nayeefArray[i], typeof nayeefArray[i]);
+
+    //Filling types Array
+    //types[i] = typeof nayeefArray[i];
+    types.push(typeof nayeefArray[i]);
 }
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i])
+}
+console.log(ages);
+
+//Continue & Break
+console.log('--Only String--')
+for (let i = 0; i < nayeefArray.length; i++) {
+
+    if (typeof nayeefArray[i] !== 'string') continue;
+    console.log(nayeefArray[i], typeof nayeefArray[i]);
+}
+
+
+console.log('--Break with Number--')
+for (let i = 0; i < nayeefArray.length; i++) {
+
+    if (typeof nayeefArray[i] === 'number') break;
+    console.log(nayeefArray[i], typeof nayeefArray[i]);
+}
+
+
