@@ -380,6 +380,52 @@
 // }
 
 
+// const nayeefArray = [
+//     'Nayeef',
+//     'Nowfal',
+//     2025 - 1998,
+//     'Student',
+//     ['Talha', 'Ashfi', 'Eraz'],
+//     true
+// ];
+
+// const types = []
+
+// for (let i = 0; i < nayeefArray.length; i++) {
+//     //reading from nayeefArray
+//     console.log(nayeefArray[i], typeof nayeefArray[i]);
+
+//     //Filling types Array
+//     //types[i] = typeof nayeefArray[i];
+//     types.push(typeof nayeefArray[i]);
+// }
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i])
+// }
+// console.log(ages);
+
+// //Continue & Break
+// console.log('--Only String--')
+// for (let i = 0; i < nayeefArray.length; i++) {
+
+//     if (typeof nayeefArray[i] !== 'string') continue;
+//     console.log(nayeefArray[i], typeof nayeefArray[i]);
+// }
+
+
+// console.log('--Break with Number--')
+// for (let i = 0; i < nayeefArray.length; i++) {
+
+//     if (typeof nayeefArray[i] === 'number') break;
+//     console.log(nayeefArray[i], typeof nayeefArray[i]);
+// }
+
+
 const nayeefArray = [
     'Nayeef',
     'Nowfal',
@@ -389,40 +435,18 @@ const nayeefArray = [
     true
 ];
 
-const types = []
+// previous lesson we printed according 0, 1, 2,....,4
 
-for (let i = 0; i < nayeefArray.length; i++) {
-    //reading from nayeefArray
-    console.log(nayeefArray[i], typeof nayeefArray[i]);
+// now 4,3,2...,0
 
-    //Filling types Array
-    //types[i] = typeof nayeefArray[i];
-    types.push(typeof nayeefArray[i]);
-}
-console.log(types);
-
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-    ages.push(2037 - years[i])
-}
-console.log(ages);
-
-//Continue & Break
-console.log('--Only String--')
-for (let i = 0; i < nayeefArray.length; i++) {
-
-    if (typeof nayeefArray[i] !== 'string') continue;
-    console.log(nayeefArray[i], typeof nayeefArray[i]);
+for (let i = nayeefArray.length - 1; i >= 0; i--) {
+    console.log(nayeefArray[i]);
 }
 
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`---------Starting Exercise ${exercise}`);
 
-console.log('--Break with Number--')
-for (let i = 0; i < nayeefArray.length; i++) {
-
-    if (typeof nayeefArray[i] === 'number') break;
-    console.log(nayeefArray[i], typeof nayeefArray[i]);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
 }
-
-
