@@ -426,27 +426,42 @@
 // }
 
 
-const nayeefArray = [
-    'Nayeef',
-    'Nowfal',
-    2025 - 1998,
-    'Student',
-    ['Talha', 'Ashfi', 'Eraz'],
-    true
-];
+// const nayeefArray = [
+//     'Nayeef',
+//     'Nowfal',
+//     2025 - 1998,
+//     'Student',
+//     ['Talha', 'Ashfi', 'Eraz'],
+//     true
+// ];
 
-// previous lesson we printed according 0, 1, 2,....,4
+// // previous lesson we printed according 0, 1, 2,....,4
 
-// now 4,3,2...,0
+// // now 4,3,2...,0
 
-for (let i = nayeefArray.length - 1; i >= 0; i--) {
-    console.log(nayeefArray[i]);
+// for (let i = nayeefArray.length - 1; i >= 0; i--) {
+//     console.log(nayeefArray[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`---------Starting Exercise ${exercise}`);
+
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+//     }
+// }
+
+let rep = 1;
+while (rep <= 10) {
+    //  console.log(`Lifting weights repetition ${rep}`);
+    rep++;
 }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-    console.log(`---------Starting Exercise ${exercise}`);
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
 
-    for (let rep = 1; rep < 6; rep++) {
-        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
-    }
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log(`Loop is about to end...`);
 }
